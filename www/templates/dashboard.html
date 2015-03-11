@@ -1,0 +1,9 @@
+<ion-view view-title="Owners">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="owner in owners | orderBy:'title'" href="#/app/owners/{{owner.id}}">
+        {{owner.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
